@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    text-align: center;
+    
+}
+.container p{
+    padding: 6px;
+}
+
+hr {
+    padding: auto;
+}
