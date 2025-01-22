@@ -1,0 +1,45 @@
+<h2 class="text-2xl font-semibold mb-4 text-center">EMPLOYEES LIST</h2>
+<div class="max-w-4xl mx-auto">
+  <table class="table-auto w-full border-collapse border border-gray-300">
+    <thead class="bg-gray-200">
+      <tr>
+        <th class="px-4 py-2 border border-gray-300">ID</th>
+        <th class="px-4 py-2 border border-gray-300">FIRST NAME</th>
+        <th class="px-4 py-2 border border-gray-300">LAST NAME</th>
+        <th class="px-4 py-2 border border-gray-300">EMAIL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees" class="hover:bg-gray-100 text-center">
+        <td class="px-4 py-2 border border-gray-300">{{ employee.id }}</td>
+        <td class="px-4 py-2 border border-gray-300">{{ employee.firstname }}</td>
+        <td class="px-4 py-2 border border-gray-300">{{ employee.lastname }}</td>
+        <td class="px-4 py-2 border border-gray-300">{{ employee.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 class="text-2xl font-semibold mt-8 mb-4 text-center">PRODUCT LIST</h2>
+<div class="max-w-4xl mx-auto">
+  <table class="table-auto w-full border-collapse border border-gray-300">
+    <thead class="bg-gray-200">
+      <tr>
+        <th class="px-4 py-2 border border-gray-300">Product ID</th>
+        <th class="px-4 py-2 border border-gray-300">Product Name</th>
+        <th class="px-4 py-2 border border-gray-300">Description</th>
+        <th class="px-4 py-2 border border-gray-300">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products" class="hover:bg-gray-100 text-center">
+        <td class="px-4 py-2 border border-gray-300">{{ product.id }}</td>
+        <td class="px-4 py-2 border border-gray-300">{{ product.productname }}</td>
+        <td class="px-4 py-2 border border-gray-300">{{ product.description }}</td>
+        <td class="px-4 py-2 border border-gray-300">{{ product.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<router-outlet />
